@@ -1505,7 +1505,7 @@ body:has(#pagina-combo:target) #pagina-combo{display:block}
 <div class="card-body"></div>
 </article></div>
 </div></section>
-<section class="calc-promo" aria-label="Calculadora grátis"><div class="container"><div class="calc-emoji" aria-hidden="true">🧮</div><div class="calc-text"><span class="calc-kicker">Ferramenta grátis</span><h2>Por quanto vender o que você faz?</h2><p>Bolo no pote, lasanha, marmita, doces e muito mais: coloque seus custos e descubra o preço certo, com lucro.</p></div><a href="#pagina-calculadora">Usar a calculadora ❯</a></div></section>
+<section class="calc-promo" aria-label="Calculadora grátis"><div class="container"><div class="calc-emoji" aria-hidden="true">🧮</div><div class="calc-text"><span class="calc-kicker">Ferramenta grátis</span><h2>Por quanto vender o seu bolo no pote?</h2><p>Coloque seus custos e descubra o preço certo para cada pote, com lucro.</p></div><a href="#pagina-calculadora">Usar a calculadora ❯</a></div></section>
 <section class="closing"><div class="container"><h2>Encontre o próximo conteúdo para a sua jornada</h2><a class="closing-cta" href="#produtos">Ver produtos</a></div></section>
 </main>
 <footer><div class="container">
@@ -2009,10 +2009,6 @@ body:has(#pagina-calculadora:target, #pagina-calculadora :target) #pagina-calcul
 #pagina-calculadora .pc-cta p{margin:0 0 16px}
 #pagina-calculadora .pc-btn{display:flex;align-items:center;justify-content:center;min-height:52px;border-radius:60px;background:linear-gradient(110deg,#e40062,#c60053);color:#fff;text-decoration:none;font-weight:800;letter-spacing:.02em;padding:0 22px;max-width:420px;margin:0 auto 10px}
 #pagina-calculadora .pc-btn.alt{background:#fff;color:#c0004f;border:2px solid #df005d}
-#pagina-calculadora .pc-chips{display:flex;flex-wrap:wrap;gap:8px}
-#pagina-calculadora .pc-chip{border:1.5px solid #ecd3a8;background:#fff;color:#401309;border-radius:30px;padding:9px 14px;font:inherit;font-size:15px;cursor:pointer}
-#pagina-calculadora .pc-chip[aria-checked="true"]{background:#df005d;border-color:#df005d;color:#fff;font-weight:700}
-#pagina-calculadora select{width:100%;min-height:46px;border:1.5px solid #ecd3a8;border-radius:12px;padding:10px 12px;font:inherit;font-size:16px;background:#fff;color:#401309}
 #pagina-calculadora .pc-foot{font-size:13px;color:#7a4a2b;text-align:center;margin-top:18px}
 #pagina-calculadora .pc-reset{background:none;border:0;color:#7a4a2b;text-decoration:underline;font:inherit;font-size:13px;cursor:pointer}
 @media (max-width:520px){
@@ -2034,17 +2030,8 @@ body:has(#pagina-calculadora:target, #pagina-calculadora :target) #pagina-calcul
 <nav class="pc-nav"><a href="#vitrine">← Voltar à vitrine da Editora Digital</a><span>FERRAMENTA GRÁTIS</span></nav>
 <main class="pc-wrap" id="calculadora-topo">
   <span class="pc-tag">CALCULADORA GRÁTIS</span>
-  <h1>Por quanto vender <em id="pc-h-prod">o seu bolo no pote</em>?</h1>
-  <p class="pc-lead">Coloque o que você gasta e descubra o preço certo de cada unidade, sem prejuízo e com lucro. Seus números ficam salvos só no seu aparelho.</p>
-
-  <section class="pc-card">
-    <h2><span class="n">✓</span>O que você vai vender?</h2>
-    <p class="pc-help">Escolha o produto. Se não estiver na lista, toque em <b>Outro</b> e escreva o nome.</p>
-    <div class="pc-chips" id="pc-chips" role="radiogroup" aria-label="Produto"></div>
-    <div class="pc-field" id="pc-outro-box" style="margin-top:12px;display:none"><label for="pc-nome">Nome do produto</label><input id="pc-nome" type="text" placeholder="Ex.: Brownie"></div>
-    <div class="pc-field" style="margin-top:12px"><label for="pc-un">Você vende por<small>a unidade de venda</small></label>
-      <select id="pc-un"><option value="pote">pote</option><option value="marmita">marmita</option><option value="porção">porção</option><option value="unidade">unidade</option><option value="fatia">fatia</option><option value="pacote">pacote</option><option value="caixa">caixa</option></select></div>
-  </section>
+  <h1>Por quanto vender o seu <em>bolo no pote?</em></h1>
+  <p class="pc-lead">Coloque o que você gasta e descubra o preço certo para cada pote, sem prejuízo e com lucro. Seus números ficam salvos só no seu aparelho.</p>
 
   <section class="pc-card">
     <h2><span class="n">1</span>Ingredientes da receita</h2>
@@ -2053,17 +2040,17 @@ body:has(#pagina-calculadora:target, #pagina-calculadora :target) #pagina-calcul
     <div id="pc-ingredientes"></div>
     <button type="button" class="pc-add" id="pc-add">+ Adicionar ingrediente</button>
     <div class="pc-field" style="margin-top:16px">
-      <label for="pc-rende"><span class="uq">Quantos</span> <span class="u2">potes</span> a receita rende?</label>
+      <label for="pc-rende">Quantos potes a receita rende?</label>
       <input id="pc-rende" type="number" inputmode="numeric" min="1" step="1" value="10">
     </div>
     <div class="pc-sub"><span>Total de ingredientes</span><b id="pc-tot-ing">R$ 0,00</b></div>
   </section>
 
   <section class="pc-card">
-    <h2><span class="n">2</span>Embalagem de cada <span class="u1">pote</span></h2>
+    <h2><span class="n">2</span>Embalagem de cada pote</h2>
     <p class="pc-help">Quanto custa <b>uma unidade</b> de cada item.</p>
-    <div class="pc-field"><label for="pc-pote">Embalagem com tampa<small>pote, marmita, bandeja ou caixa</small></label><div class="money"><input id="pc-pote" type="number" inputmode="decimal" min="0" step="0.01" value="1.20"></div></div>
-    <div class="pc-field"><label for="pc-colher">Talher, colher ou guardanapo</label><div class="money"><input id="pc-colher" type="number" inputmode="decimal" min="0" step="0.01" value="0.15"></div></div>
+    <div class="pc-field"><label for="pc-pote">Pote com tampa</label><div class="money"><input id="pc-pote" type="number" inputmode="decimal" min="0" step="0.01" value="1.20"></div></div>
+    <div class="pc-field"><label for="pc-colher">Colherzinha</label><div class="money"><input id="pc-colher" type="number" inputmode="decimal" min="0" step="0.01" value="0.15"></div></div>
     <div class="pc-field"><label for="pc-etiqueta">Etiqueta, adesivo ou fita</label><div class="money"><input id="pc-etiqueta" type="number" inputmode="decimal" min="0" step="0.01" value="0.30"></div></div>
   </section>
 
@@ -2081,16 +2068,16 @@ body:has(#pagina-calculadora:target, #pagina-calculadora :target) #pagina-calcul
     <label for="pc-lucro" style="font-weight:600">Lucro sobre o custo</label>
     <div class="pc-range"><input id="pc-lucro" type="range" min="10" max="150" step="5" value="50"><span class="pc-pct" id="pc-lucro-v">50%</span></div>
     <div class="pc-field" style="margin-top:12px"><label for="pc-taxa">Taxa de cartão ou app de entrega<small>em %, se tiver (se não, deixe 0)</small></label><input id="pc-taxa" type="number" inputmode="decimal" min="0" max="60" step="0.5" value="0"></div>
-    <div class="pc-field"><label for="pc-mes"><span class="uq">Quantos</span> <span class="u2">potes</span> você vende por mês?<small>para estimar seu lucro</small></label><input id="pc-mes" type="number" inputmode="numeric" min="0" step="1" value="100"></div>
+    <div class="pc-field"><label for="pc-mes">Quantos potes você vende por mês?<small>para estimar seu lucro</small></label><input id="pc-mes" type="number" inputmode="numeric" min="0" step="1" value="100"></div>
   </section>
 
   <section class="pc-result" aria-live="polite">
-    <p class="pc-price-label">Preço sugerido por <span class="u1">pote</span></p>
+    <p class="pc-price-label">Preço sugerido por pote</p>
     <p class="pc-price" id="pc-preco">R$ 0,00</p>
     <p class="pc-price-note">arredondado para cima, para facilitar o troco</p>
     <div class="pc-grid">
-      <div><span>Custo de cada <span class="u1">pote</span></span><strong id="pc-custo">R$ 0,00</strong></div>
-      <div><span>Lucro em cada <span class="u1">pote</span></span><strong id="pc-lucro-pote">R$ 0,00</strong></div>
+      <div><span>Custo de cada pote</span><strong id="pc-custo">R$ 0,00</strong></div>
+      <div><span>Lucro em cada pote</span><strong id="pc-lucro-pote">R$ 0,00</strong></div>
       <div><span>Lucro por receita</span><strong id="pc-lucro-rec">R$ 0,00</strong></div>
       <div><span>Lucro estimado no mês</span><strong id="pc-lucro-mes">R$ 0,00</strong></div>
     </div>
@@ -2100,9 +2087,9 @@ body:has(#pagina-calculadora:target, #pagina-calculadora :target) #pagina-calcul
 
   <section class="pc-cta">
     <h3>Quer vender mais e lucrar de verdade?</h3>
-    <p>Conheça os materiais da coleção <b>Renda Extra Lucrativa</b>: receitas, organização, precificação e vendas, passo a passo.</p>
+    <p>No curso <b>Bolo no Pote Lucrativo</b> você aprende a produzir, organizar, precificar e divulgar, passo a passo.</p>
     <a class="pc-btn" href="#pagina-bolo-curso">CONHECER O CURSO ❯</a>
-    <a class="pc-btn alt" href="#produtos">Ver todos os produtos</a>
+    <a class="pc-btn alt" href="#pagina-bolo-ebook">Ver o e-book de receitas</a>
   </section>
 
   <p class="pc-foot">Os valores são uma estimativa para ajudar você a decidir. Confira sempre os preços da sua região.<br>
@@ -2112,32 +2099,11 @@ body:has(#pagina-calculadora:target, #pagina-calculadora :target) #pagina-calcul
 
 <script>
 (function(){
-  var CHAVE='calculadora-precos-v2';
+  var CHAVE='calculadora-bolo-pote-v1';
   var EXEMPLO={ing:[['Farinha de trigo',3.5],['Açúcar',2.5],['Ovos',4.8],['Leite e manteiga',5],['Chocolate e cacau',9],['Leite condensado e creme de leite',14]],
-    prod:'Bolo no pote',un:'pote',nome:'',rende:10,pote:1.2,colher:0.15,etiqueta:0.3,gas:4,horas:2,hora:12,lucro:50,taxa:0,mes:100};
+    rende:10,pote:1.2,colher:0.15,etiqueta:0.3,gas:4,horas:2,hora:12,lucro:50,taxa:0,mes:100};
   var lista=document.getElementById('pc-ingredientes');
-  var campos=['rende','pote','colher','etiqueta','gas','horas','hora','lucro','taxa','mes','un','nome'];
-  var PRODUTOS=[['Bolo no pote','pote','o seu bolo no pote'],['Doce no pote','pote','o seu doce no pote'],['Pudim no pote','pote','o seu pudim no pote'],
-    ['Lasanha','porção','a sua lasanha'],['Panqueca','porção','a sua panqueca'],['Salada','pote','a sua salada'],
-    ['Quentinha','marmita','a sua quentinha'],['Congelados','pacote','os seus congelados'],['Outro','unidade','o seu produto']];
-  var PLURAL={'pote':'potes','marmita':'marmitas','porção':'porções','unidade':'unidades','fatia':'fatias','pacote':'pacotes','caixa':'caixas'};
-  var prodAtual='Bolo no pote';
-  var chips=document.getElementById('pc-chips');
-  PRODUTOS.forEach(function(pr){var b=document.createElement('button');b.type='button';b.className='pc-chip';b.setAttribute('role','radio');b.textContent=pr[0];
-    b.addEventListener('click',function(){prodAtual=pr[0];document.getElementById('pc-un').value=pr[1];rotulos();calcular();
-      if(pr[0]==='Outro')document.getElementById('pc-nome').focus();});chips.appendChild(b);});
-  function rotulos(){
-    [].forEach.call(chips.children,function(b){b.setAttribute('aria-checked',b.textContent===prodAtual?'true':'false');});
-    var outro=prodAtual==='Outro';document.getElementById('pc-outro-box').style.display=outro?'':'none';
-    var pr=PRODUTOS.filter(function(x){return x[0]===prodAtual;})[0]||PRODUTOS[0];
-    var nome=document.getElementById('pc-nome').value.trim();
-    document.getElementById('pc-h-prod').textContent=outro&&nome?('o seu '+nome.toLowerCase()):pr[2];
-    var u=document.getElementById('pc-un').value||'unidade';
-    [].forEach.call(document.querySelectorAll('#pagina-calculadora .u1'),function(e){e.textContent=u;});
-    [].forEach.call(document.querySelectorAll('#pagina-calculadora .u2'),function(e){e.textContent=PLURAL[u]||u;});
-    var fem=['marmita','porção','unidade','fatia','caixa'].indexOf(u)>=0;
-    [].forEach.call(document.querySelectorAll('#pagina-calculadora .uq'),function(e){e.textContent=fem?'Quantas':'Quantos';});
-  }
+  var campos=['rende','pote','colher','etiqueta','gas','horas','hora','lucro','taxa','mes'];
   function $(id){return document.getElementById('pc-'+id);}
   function num(v){v=parseFloat(String(v).replace(',','.'));return isFinite(v)&&v>0?v:0;}
   function brl(v){return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});}
@@ -2153,11 +2119,10 @@ body:has(#pagina-calculadora:target, #pagina-calculadora :target) #pagina-calcul
     lista.innerHTML='';(d.ing||[]).forEach(function(i){linha(i[0],i[1]);});
     if(!d.ing||!d.ing.length)linha('','');
     campos.forEach(function(c){if(d[c]!=null)$(c).value=d[c];});
-    prodAtual=d.prod||'Bolo no pote';if(!$('un').value)$('un').value='pote';rotulos();
   }
   function salvar(){
     var d={ing:[].map.call(lista.children,function(r){var i=r.querySelectorAll('input');return [i[0].value,i[1].value];})};
-    campos.forEach(function(c){d[c]=$(c).value;});d.prod=prodAtual;
+    campos.forEach(function(c){d[c]=$(c).value;});
     try{localStorage.setItem(CHAVE,JSON.stringify(d));}catch(e){}
   }
   function calcular(){
@@ -2178,7 +2143,6 @@ body:has(#pagina-calculadora:target, #pagina-calculadora :target) #pagina-calcul
     $('lucro-pote').textContent=brl(lucroPote);
     $('lucro-rec').textContent=brl(lucroPote*rende);
     $('lucro-mes').textContent=brl(lucroPote*Math.round(num($('mes').value)));
-    rotulos();
     var al=$('alert'),msg='';
     if(ing===0)msg='Coloque o valor dos ingredientes para o cálculo ficar certo.';
     else if(num($('hora').value)===0||num($('horas').value)===0)msg='Você deixou o seu trabalho de fora. Lembre-se: seu tempo também tem valor!';
