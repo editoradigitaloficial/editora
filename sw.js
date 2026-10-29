@@ -1,6 +1,6 @@
 // Guarda o site no aparelho para abrir rápido e funcionar sem internet.
 // Ao atualizar o site, aumente o número da versão abaixo.
-const VERSAO = 'editora-v9';
+const VERSAO = 'editora-v10';
 const ARQUIVOS = [
   "./",
   "index.html",
