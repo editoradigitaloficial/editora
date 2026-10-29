@@ -1423,7 +1423,7 @@ body:has(#pagina-combo:target) #pagina-combo{display:block}
 <a aria-label="Editora Digital — início" class="brand" href="#inicio">
 <span class="logo-circle"><img loading="lazy" decoding="async" alt="Logotipo azul circular da Editora Digital" src="img/4fb6f3dfa7.webp"/></span>
 <span class="brand-name">Editora Digital</span></a>
-<div class="header-right"><nav aria-label="Menu principal" class="nav"><a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#produtos">Produtos</a></nav>
+<div class="header-right"><nav aria-label="Menu principal" class="nav"><a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#produtos">Produtos</a><a href="#pagina-calculadora">Calculadora</a></nav>
 <a class="header-cta" href="#produtos">Ver produtos</a></div>
 </div></header>
 <main>
@@ -1505,6 +1505,7 @@ body:has(#pagina-combo:target) #pagina-combo{display:block}
 <div class="card-body"></div>
 </article></div>
 </div></section>
+<section class="calc-promo" aria-label="Calculadora grátis"><div class="container"><div class="calc-emoji" aria-hidden="true">🧮</div><div class="calc-text"><span class="calc-kicker">Ferramenta grátis</span><h2>Por quanto vender o seu bolo no pote?</h2><p>Coloque seus custos e descubra o preço certo para cada pote, com lucro.</p></div><a href="#pagina-calculadora">Usar a calculadora ❯</a></div></section>
 <section class="closing"><div class="container"><h2>Encontre o próximo conteúdo para a sua jornada</h2><a class="closing-cta" href="#produtos">Ver produtos</a></div></section>
 </main>
 <footer><div class="container">
@@ -1957,6 +1958,208 @@ document.addEventListener('click',function(e){if(e.target.closest('a[href="#pagi
 </main></div>
 <script>(function(){function topoCombo(){if(location.hash==='#pagina-combo'){window.scrollTo(0,0);requestAnimationFrame(function(){window.scrollTo(0,0)});}}window.addEventListener('hashchange',topoCombo);window.addEventListener('load',topoCombo);document.addEventListener('click',function(e){if(e.target.closest('a[href="#pagina-combo"]'))requestAnimationFrame(topoCombo);});})();</script>
 
+
+<!-- ===== Calculadora de preço do bolo no pote (grátis) ===== -->
+<style>
+#pagina-calculadora{display:none;min-height:100vh;background:linear-gradient(160deg,#fff3b8,#ffdf6b 55%,#fbd24a);color:#401309;font:400 16px/1.5 Arial,Helvetica,sans-serif}
+body:has(#pagina-calculadora:target, #pagina-calculadora :target) #vitrine{display:none}
+body:has(#pagina-calculadora:target, #pagina-calculadora :target) #pagina-calculadora{display:block}
+#pagina-calculadora *{box-sizing:border-box}
+#pagina-calculadora .pc-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px max(16px,calc((100vw - 760px)/2));background:#fff0ab;font-size:12px;font-weight:bold;letter-spacing:.04em;color:#692c12}
+#pagina-calculadora .pc-nav a{color:#68250a;text-underline-offset:3px}
+#pagina-calculadora .pc-wrap{width:min(100% - 32px,760px);margin:0 auto;padding:28px 0 56px}
+#pagina-calculadora .pc-tag{display:inline-block;border:1.5px solid #df005b;color:#bf004a;border-radius:30px;padding:3px 14px;font-size:13px;font-weight:700;letter-spacing:.08em}
+#pagina-calculadora h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(30px,7vw,44px);line-height:1.08;margin:14px 0 10px;color:#401009}
+#pagina-calculadora h1 em{color:#d90063;font-style:italic}
+#pagina-calculadora .pc-lead{font-size:17px;margin:0 0 22px;max-width:600px}
+#pagina-calculadora .pc-card{background:#fffaf0;border-radius:18px;padding:20px 18px;margin-bottom:16px;box-shadow:0 6px 22px rgba(120,60,0,.10)}
+#pagina-calculadora h2{font-size:18px;margin:0 0 4px;display:flex;align-items:center;gap:10px;color:#401009}
+#pagina-calculadora h2 .n{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#df005d;color:#fff;font-size:14px;flex:none}
+#pagina-calculadora .pc-help{font-size:14px;color:#7a4a2b;margin:0 0 14px}
+#pagina-calculadora .pc-row{display:grid;grid-template-columns:1fr 132px 40px;gap:8px;margin-bottom:8px;align-items:center}
+#pagina-calculadora .pc-row.head{font-size:12px;font-weight:700;color:#7a4a2b;margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em}
+#pagina-calculadora input{width:100%;min-height:46px;border:1.5px solid #ecd3a8;border-radius:12px;padding:10px 12px;font:inherit;font-size:16px;background:#fff;color:#401309}
+#pagina-calculadora input:focus{outline:none;border-color:#df005d;box-shadow:0 0 0 3px rgba(223,0,93,.15)}
+#pagina-calculadora .money{position:relative}
+#pagina-calculadora .money::before{content:"R$";position:absolute;left:11px;top:50%;transform:translateY(-50%);font-size:14px;color:#9a6a46;pointer-events:none}
+#pagina-calculadora .money input{padding-left:36px}
+#pagina-calculadora .pc-del{width:40px;height:40px;border:0;border-radius:10px;background:#fbe3ea;color:#c0004f;font-size:20px;cursor:pointer}
+#pagina-calculadora .pc-add{border:1.5px dashed #df005d;background:transparent;color:#c0004f;border-radius:12px;padding:10px 14px;font:inherit;font-weight:700;cursor:pointer;width:100%;margin-top:4px}
+#pagina-calculadora .pc-field{display:grid;grid-template-columns:1fr 150px;gap:10px;align-items:center;margin-bottom:10px}
+#pagina-calculadora .pc-field label{font-weight:600}
+#pagina-calculadora .pc-field small{display:block;font-weight:400;font-size:13px;color:#7a4a2b}
+#pagina-calculadora .pc-sub{display:flex;justify-content:space-between;border-top:1px dashed #ecd3a8;margin-top:12px;padding-top:10px;font-size:15px}
+#pagina-calculadora .pc-sub b{color:#401009}
+#pagina-calculadora .pc-range{display:flex;align-items:center;gap:14px}
+#pagina-calculadora input[type=range]{padding:0;border:0;min-height:30px;accent-color:#df005d;background:transparent;box-shadow:none}
+#pagina-calculadora .pc-pct{min-width:64px;text-align:right;font-size:22px;font-weight:800;color:#d90063}
+#pagina-calculadora .pc-result{background:linear-gradient(135deg,#df005d,#b8004c);color:#fff;border-radius:20px;padding:22px 20px;margin:20px 0 16px;box-shadow:0 10px 28px rgba(180,0,76,.28)}
+#pagina-calculadora .pc-result p{margin:0}
+#pagina-calculadora .pc-price-label{font-size:14px;letter-spacing:.06em;text-transform:uppercase;opacity:.9}
+#pagina-calculadora .pc-price{font-family:Georgia,serif;font-size:clamp(40px,11vw,58px);font-weight:700;line-height:1.1;margin:4px 0 2px!important}
+#pagina-calculadora .pc-price-note{font-size:14px;opacity:.9}
+#pagina-calculadora .pc-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+#pagina-calculadora .pc-grid div{background:rgba(255,255,255,.14);border-radius:12px;padding:10px 12px}
+#pagina-calculadora .pc-grid span{display:block;font-size:12px;opacity:.9}
+#pagina-calculadora .pc-grid strong{font-size:19px}
+#pagina-calculadora .pc-alert{background:#fff;color:#8a2b00;border-radius:12px;padding:10px 12px;margin-top:12px;font-size:14px;display:none}
+#pagina-calculadora .pc-alert.on{display:block}
+#pagina-calculadora .pc-cta{background:#fffaf0;border:2px solid #df005d;border-radius:18px;padding:20px 18px;text-align:center}
+#pagina-calculadora .pc-cta h3{font-family:Georgia,serif;font-size:22px;margin:0 0 8px;color:#401009}
+#pagina-calculadora .pc-cta p{margin:0 0 16px}
+#pagina-calculadora .pc-btn{display:flex;align-items:center;justify-content:center;min-height:52px;border-radius:60px;background:linear-gradient(110deg,#e40062,#c60053);color:#fff;text-decoration:none;font-weight:800;letter-spacing:.02em;padding:0 22px;max-width:420px;margin:0 auto 10px}
+#pagina-calculadora .pc-btn.alt{background:#fff;color:#c0004f;border:2px solid #df005d}
+#pagina-calculadora .pc-foot{font-size:13px;color:#7a4a2b;text-align:center;margin-top:18px}
+#pagina-calculadora .pc-reset{background:none;border:0;color:#7a4a2b;text-decoration:underline;font:inherit;font-size:13px;cursor:pointer}
+@media (max-width:520px){
+ #pagina-calculadora .pc-row{grid-template-columns:1fr 112px 40px}
+ #pagina-calculadora .pc-field{grid-template-columns:1fr 120px}
+}
+/* Chamada na vitrine */
+#vitrine .calc-promo{background:linear-gradient(120deg,#fff1a8,#ffd84f);padding-block:44px}
+#vitrine .calc-promo .container{display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap}
+#vitrine .calc-promo .calc-emoji{font-size:46px;line-height:1}
+#vitrine .calc-promo .calc-text{flex:1 1 300px;color:#401309}
+#vitrine .calc-promo .calc-kicker{font-size:12px;font-weight:700;letter-spacing:.14em;color:#bf004a;text-transform:uppercase}
+#vitrine .calc-promo h2{font-size:26px;margin:6px 0;color:#401009}
+#vitrine .calc-promo p{margin:0;color:#5b2a12}
+#vitrine .calc-promo a{display:inline-block;background:linear-gradient(110deg,#e40062,#c60053);color:#fff;text-decoration:none;border-radius:50px;padding:14px 26px;font-weight:700;white-space:nowrap}
+</style>
+
+<div id="pagina-calculadora" lang="pt-BR">
+<nav class="pc-nav"><a href="#vitrine">← Voltar à vitrine da Editora Digital</a><span>FERRAMENTA GRÁTIS</span></nav>
+<main class="pc-wrap" id="calculadora-topo">
+  <span class="pc-tag">CALCULADORA GRÁTIS</span>
+  <h1>Por quanto vender o seu <em>bolo no pote?</em></h1>
+  <p class="pc-lead">Coloque o que você gasta e descubra o preço certo para cada pote, sem prejuízo e com lucro. Seus números ficam salvos só no seu aparelho.</p>
+
+  <section class="pc-card">
+    <h2><span class="n">1</span>Ingredientes da receita</h2>
+    <p class="pc-help">Coloque quanto custou o que você usa em <b>uma receita</b>. Se usou só metade de um pacote, coloque metade do valor.</p>
+    <div class="pc-row head"><span>Ingrediente</span><span>Valor gasto</span><span></span></div>
+    <div id="pc-ingredientes"></div>
+    <button type="button" class="pc-add" id="pc-add">+ Adicionar ingrediente</button>
+    <div class="pc-field" style="margin-top:16px">
+      <label for="pc-rende">Quantos potes a receita rende?</label>
+      <input id="pc-rende" type="number" inputmode="numeric" min="1" step="1" value="10">
+    </div>
+    <div class="pc-sub"><span>Total de ingredientes</span><b id="pc-tot-ing">R$ 0,00</b></div>
+  </section>
+
+  <section class="pc-card">
+    <h2><span class="n">2</span>Embalagem de cada pote</h2>
+    <p class="pc-help">Quanto custa <b>uma unidade</b> de cada item.</p>
+    <div class="pc-field"><label for="pc-pote">Pote com tampa</label><div class="money"><input id="pc-pote" type="number" inputmode="decimal" min="0" step="0.01" value="1.20"></div></div>
+    <div class="pc-field"><label for="pc-colher">Colherzinha</label><div class="money"><input id="pc-colher" type="number" inputmode="decimal" min="0" step="0.01" value="0.15"></div></div>
+    <div class="pc-field"><label for="pc-etiqueta">Etiqueta, adesivo ou fita</label><div class="money"><input id="pc-etiqueta" type="number" inputmode="decimal" min="0" step="0.01" value="0.30"></div></div>
+  </section>
+
+  <section class="pc-card">
+    <h2><span class="n">3</span>Gás, luz e o seu trabalho</h2>
+    <p class="pc-help">Seu tempo também vale dinheiro. Não deixe de fora!</p>
+    <div class="pc-field"><label for="pc-gas">Gás e energia<small>gasto aproximado por receita</small></label><div class="money"><input id="pc-gas" type="number" inputmode="decimal" min="0" step="0.01" value="4.00"></div></div>
+    <div class="pc-field"><label for="pc-horas">Horas de trabalho<small>para fazer uma receita</small></label><input id="pc-horas" type="number" inputmode="decimal" min="0" step="0.25" value="2"></div>
+    <div class="pc-field"><label for="pc-hora">Quanto vale sua hora</label><div class="money"><input id="pc-hora" type="number" inputmode="decimal" min="0" step="0.5" value="12.00"></div></div>
+  </section>
+
+  <section class="pc-card">
+    <h2><span class="n">4</span>Seu lucro e as taxas</h2>
+    <p class="pc-help">O lucro é o que sobra para o seu negócio crescer, além do pagamento do seu trabalho.</p>
+    <label for="pc-lucro" style="font-weight:600">Lucro sobre o custo</label>
+    <div class="pc-range"><input id="pc-lucro" type="range" min="10" max="150" step="5" value="50"><span class="pc-pct" id="pc-lucro-v">50%</span></div>
+    <div class="pc-field" style="margin-top:12px"><label for="pc-taxa">Taxa de cartão ou app de entrega<small>em %, se tiver (se não, deixe 0)</small></label><input id="pc-taxa" type="number" inputmode="decimal" min="0" max="60" step="0.5" value="0"></div>
+    <div class="pc-field"><label for="pc-mes">Quantos potes você vende por mês?<small>para estimar seu lucro</small></label><input id="pc-mes" type="number" inputmode="numeric" min="0" step="1" value="100"></div>
+  </section>
+
+  <section class="pc-result" aria-live="polite">
+    <p class="pc-price-label">Preço sugerido por pote</p>
+    <p class="pc-price" id="pc-preco">R$ 0,00</p>
+    <p class="pc-price-note">arredondado para cima, para facilitar o troco</p>
+    <div class="pc-grid">
+      <div><span>Custo de cada pote</span><strong id="pc-custo">R$ 0,00</strong></div>
+      <div><span>Lucro em cada pote</span><strong id="pc-lucro-pote">R$ 0,00</strong></div>
+      <div><span>Lucro por receita</span><strong id="pc-lucro-rec">R$ 0,00</strong></div>
+      <div><span>Lucro estimado no mês</span><strong id="pc-lucro-mes">R$ 0,00</strong></div>
+    </div>
+    <p class="pc-grid-note" style="font-size:13px;opacity:.9;margin-top:12px">O lucro é o que sobra depois de pagar ingredientes, embalagem, gás, luz e as suas horas de trabalho.</p>
+    <div class="pc-alert" id="pc-alert"></div>
+  </section>
+
+  <section class="pc-cta">
+    <h3>Quer vender mais e lucrar de verdade?</h3>
+    <p>No curso <b>Bolo no Pote Lucrativo</b> você aprende a produzir, organizar, precificar e divulgar, passo a passo.</p>
+    <a class="pc-btn" href="#pagina-bolo-curso">CONHECER O CURSO ❯</a>
+    <a class="pc-btn alt" href="#pagina-bolo-ebook">Ver o e-book de receitas</a>
+  </section>
+
+  <p class="pc-foot">Os valores são uma estimativa para ajudar você a decidir. Confira sempre os preços da sua região.<br>
+  <button type="button" class="pc-reset" id="pc-reset">Recomeçar com os valores de exemplo</button></p>
+</main>
+</div>
+
+<script>
+(function(){
+  var CHAVE='calculadora-bolo-pote-v1';
+  var EXEMPLO={ing:[['Farinha de trigo',3.5],['Açúcar',2.5],['Ovos',4.8],['Leite e manteiga',5],['Chocolate e cacau',9],['Leite condensado e creme de leite',14]],
+    rende:10,pote:1.2,colher:0.15,etiqueta:0.3,gas:4,horas:2,hora:12,lucro:50,taxa:0,mes:100};
+  var lista=document.getElementById('pc-ingredientes');
+  var campos=['rende','pote','colher','etiqueta','gas','horas','hora','lucro','taxa','mes'];
+  function $(id){return document.getElementById('pc-'+id);}
+  function num(v){v=parseFloat(String(v).replace(',','.'));return isFinite(v)&&v>0?v:0;}
+  function brl(v){return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});}
+  function linha(nome,valor){
+    var r=document.createElement('div');r.className='pc-row';
+    r.innerHTML='<input type="text" aria-label="Nome do ingrediente" placeholder="Ex.: Chocolate"><div class="money"><input type="number" inputmode="decimal" min="0" step="0.01" aria-label="Valor gasto"></div><button type="button" class="pc-del" aria-label="Remover ingrediente">×</button>';
+    r.querySelector('input[type=text]').value=nome||'';
+    r.querySelector('input[type=number]').value=valor!=null&&valor!==''?valor:'';
+    r.querySelector('.pc-del').addEventListener('click',function(){r.remove();calcular();});
+    lista.appendChild(r);return r;
+  }
+  function carregar(d){
+    lista.innerHTML='';(d.ing||[]).forEach(function(i){linha(i[0],i[1]);});
+    if(!d.ing||!d.ing.length)linha('','');
+    campos.forEach(function(c){if(d[c]!=null)$(c).value=d[c];});
+  }
+  function salvar(){
+    var d={ing:[].map.call(lista.children,function(r){var i=r.querySelectorAll('input');return [i[0].value,i[1].value];})};
+    campos.forEach(function(c){d[c]=$(c).value;});
+    try{localStorage.setItem(CHAVE,JSON.stringify(d));}catch(e){}
+  }
+  function calcular(){
+    var ing=0;[].forEach.call(lista.querySelectorAll('input[type=number]'),function(i){ing+=num(i.value);});
+    var rende=Math.max(1,Math.round(num($('rende').value))||1);
+    var emb=num($('pote').value)+num($('colher').value)+num($('etiqueta').value);
+    var porReceita=num($('gas').value)+num($('horas').value)*num($('hora').value);
+    var custo=ing/rende+emb+porReceita/rende;
+    var lucroPct=num($('lucro').value)/100;
+    var taxa=Math.min(num($('taxa').value),60)/100;
+    var precoBase=custo*(1+lucroPct)/(1-taxa);
+    var preco=Math.ceil(precoBase*2)/2;
+    var lucroPote=preco*(1-taxa)-custo;
+    $('tot-ing').textContent=brl(ing);
+    $('lucro-v').textContent=Math.round(lucroPct*100)+'%';
+    $('preco').textContent=brl(preco);
+    $('custo').textContent=brl(custo);
+    $('lucro-pote').textContent=brl(lucroPote);
+    $('lucro-rec').textContent=brl(lucroPote*rende);
+    $('lucro-mes').textContent=brl(lucroPote*Math.round(num($('mes').value)));
+    var al=$('alert'),msg='';
+    if(ing===0)msg='Coloque o valor dos ingredientes para o cálculo ficar certo.';
+    else if(num($('hora').value)===0||num($('horas').value)===0)msg='Você deixou o seu trabalho de fora. Lembre-se: seu tempo também tem valor!';
+    al.textContent=msg;al.classList.toggle('on',!!msg);
+    salvar();
+  }
+  var salvo=null;try{salvo=JSON.parse(localStorage.getItem(CHAVE)||'null');}catch(e){}
+  carregar(salvo||EXEMPLO);
+  document.getElementById('pagina-calculadora').addEventListener('input',calcular);
+  document.getElementById('pc-add').addEventListener('click',function(){linha('','').querySelector('input').focus();calcular();});
+  document.getElementById('pc-reset').addEventListener('click',function(){carregar(EXEMPLO);calcular();window.scrollTo(0,0);});
+  calcular();
+  function topo(){if(location.hash==='#pagina-calculadora'){window.scrollTo(0,0);requestAnimationFrame(function(){window.scrollTo(0,0);});}}
+  window.addEventListener('hashchange',topo);window.addEventListener('load',topo);
+})();
+</script>
+<!-- ===== fim da calculadora ===== -->
 
 <!-- App instalável -->
 <style>
