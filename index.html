@@ -2012,7 +2012,11 @@ body:has(#pagina-calculadora:target, #pagina-calculadora :target) #pagina-calcul
 #pagina-calculadora .pc-foot{font-size:13px;color:#7a4a2b;text-align:center;margin-top:18px}
 #pagina-calculadora .pc-reset{background:none;border:0;color:#7a4a2b;text-decoration:underline;font:inherit;font-size:13px;cursor:pointer}
 @media (max-width:520px){
- #pagina-calculadora .pc-row{grid-template-columns:1fr 112px 40px}
+ #pagina-calculadora .pc-row{grid-template-columns:1fr 96px 34px;gap:6px}
+ #pagina-calculadora .pc-row input[type=text]{padding-inline:9px;font-size:15px}
+ #pagina-calculadora .pc-row .money input{padding-left:32px;padding-right:6px}
+ #pagina-calculadora .pc-row .money::before{left:9px}
+ #pagina-calculadora .pc-del{width:34px}
  #pagina-calculadora .pc-field{grid-template-columns:1fr 120px}
 }
 /* Chamada na vitrine */
@@ -2087,7 +2091,7 @@ body:has(#pagina-calculadora:target, #pagina-calculadora :target) #pagina-calcul
 
   <section class="pc-cta">
     <h3>Quer vender mais e lucrar de verdade?</h3>
-    <p>No curso <b>Bolo no Pote Lucrativo</b> você aprende a produzir, organizar, precificar e divulgar, passo a passo.</p>
+    <p>No curso <b>Bolo no Pote Lucrativo</b> você aprende a planejar e organizar a produção, calcular custos, precificar e vender, passo a passo.</p>
     <a class="pc-btn" href="#pagina-bolo-curso">CONHECER O CURSO ❯</a>
     <a class="pc-btn alt" href="#pagina-bolo-ebook">Ver o e-book de receitas</a>
   </section>
@@ -2099,8 +2103,8 @@ body:has(#pagina-calculadora:target, #pagina-calculadora :target) #pagina-calcul
 
 <script>
 (function(){
-  var CHAVE='calculadora-bolo-pote-v1';
-  var EXEMPLO={ing:[['Farinha de trigo',3.5],['Açúcar',2.5],['Ovos',4.8],['Leite e manteiga',5],['Chocolate e cacau',9],['Leite condensado e creme de leite',14]],
+  var CHAVE='calculadora-bolo-pote-v2';
+  var EXEMPLO={ing:[['Farinha de trigo',3.5],['Açúcar',2.5],['Ovos',4.8],['Leite e manteiga',5],['Chocolate',9],['Leite condensado',9],['Creme de leite',5]],
     rende:10,pote:1.2,colher:0.15,etiqueta:0.3,gas:4,horas:2,hora:12,lucro:50,taxa:0,mes:100};
   var lista=document.getElementById('pc-ingredientes');
   var campos=['rende','pote','colher','etiqueta','gas','horas','hora','lucro','taxa','mes'];
