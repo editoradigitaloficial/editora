@@ -1,6 +1,6 @@
 // Guarda o site no aparelho para abrir rápido e funcionar sem internet.
 // Ao atualizar o site, aumente o número da versão abaixo.
-const VERSAO = 'editora-v14';
+const VERSAO = 'editora-v15';
 const ARQUIVOS = [
   "./",
   "index.html",
@@ -14,7 +14,7 @@ const ARQUIVOS = [
   "img/1a025b7176.webp",
   "img/24b7824092.webp",
   "img/2bca424d1d.webp",
-  "img/2bfd20baf7.webp",
+  "img/2bfd20n0f7.webp",
   "img/2e917dd09b.webp",
   "img/331285474d.webp",
   "img/36fe050c84.webp",
@@ -24,7 +24,7 @@ const ARQUIVOS = [
   "img/4d292bc013.webp",
   "img/4fb6f3dfa7.webp",
   "img/5109e3ece0.webp",
-  "img/6085ec7c75.webp",
+  "img/6085ecn075.webp",
   "img/68fbde4bac.webp",
   "img/6ba905453e.webp",
   "img/6cb8f0e55c.webp",
@@ -45,7 +45,7 @@ const ARQUIVOS = [
   "img/ba911b6554.webp",
   "img/badea9f1bc.webp",
   "img/bf94ef5b8f.webp",
-  "img/d8f30d3f16.webp",
+  "img/d8f30dn016.webp",
   "img/f2d5fb9aaa.webp",
   "img/f47c576bbd.webp",
   "img/f4f3db37c8.webp",
