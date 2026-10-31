@@ -1,6 +1,6 @@
 // Guarda o site no aparelho para abrir rápido e funcionar sem internet.
 // Ao atualizar o site, aumente o número da versão abaixo.
-const VERSAO = 'editora-v19';
+const VERSAO = 'editora-v20';
 const ARQUIVOS = [
   "./",
   "index.html",
@@ -49,7 +49,8 @@ const ARQUIVOS = [
   "img/f2d5fb9aaa.webp",
   "img/f47c576bbd.webp",
   "img/f4f3db37c8.webp",
-  "img/fef04497f3.webp"
+  "img/fef04497f3.webp",
+  "img/log-moto.webp"
 ];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSAO).then(c => c.addAll(ARQUIVOS)).then(() => self.skipWaiting()));
