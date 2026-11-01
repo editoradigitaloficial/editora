@@ -1197,6 +1197,11 @@ body:has(#pagina-kit:target, #pagina-kit :target) #pagina-kit{display:block}
 }
 @media(max-width:355px){#pagina-kit .deliver-item{grid-template-columns:60px 1fr;gap:10px}#pagina-kit .deliver-item .illustration{width:58px;height:58px}}
 
+
+/* Curso e Combo temporariamente em atualização */
+.em-atualizacao-aviso{background:#fff4d6;color:#5a3a00;border:2px dashed #e5a500;border-radius:14px;padding:12px 16px;margin:12px auto;max-width:640px;text-align:center;font:700 15px/1.45 Arial,sans-serif}
+.btn-em-atualizacao{display:inline-block;background:#bdbdbd!important;color:#444!important;box-shadow:none!important;cursor:not-allowed!important;text-decoration:none!important;pointer-events:none}
+#vitrine .buy.btn-em-atualizacao{display:flex;align-items:center;justify-content:center;font-weight:700}
 </style><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/><style>
 
 /* Logística Inteligente: nova página de vendas isolada, sem mudanças nas demais */
@@ -1372,13 +1377,13 @@ body:has(#pagina-combo:target) #pagina-combo{display:block}
 </head>
 <body>
 <main aria-label="Página de vendas: Curso Bolo no Pote Lucrativo" id="pagina-bolo-curso">
-<nav class="cb-nav"><a class="cb-back" href="#vitrine">← Voltar à vitrine da Editora Digital</a><span>CURSO ONLINE</span></nav>
+<nav class="cb-nav"><a class="cb-back" href="#vitrine">← Voltar à vitrine da Editora Digital</a><span>CURSO ONLINE</span></nav><p class="em-atualizacao-aviso">🛠️ O curso Bolo no Pote Lucrativo está temporariamente em atualização. Estamos preparando uma versão nova e melhorada. Em breve, novas inscrições estarão abertas!</p>
 <section class="cb-hero" id="curso-inicio">
 <div class="cb-container cb-hero-layout">
 <div class="cb-intro-copy"><span class="cb-eyebrow">CURSO ONLINE</span>
 <h1><em>Bolo no Pote</em><strong>Lucrativo <span class="cb-heart">♡</span></strong></h1>
 <p>Aprenda a produzir, precificar e vender bolos no pote com organização e estratégia, e transforme essa paixão em uma <b>renda extra!</b></p>
-<a class="cb-btn" href="https://pay.hotmart.com/T104394838M?checkoutMode=10" target="_blank" rel="noopener noreferrer">QUERO ENTRAR NO CURSO <span>❯</span></a>
+<span class="cb-btn btn-em-atualizacao" aria-disabled="true">CURSO TEMPORARIAMENTE EM ATUALIZAÇÃO</span>
 <div class="cb-benefits"><span>⚡ Acesso imediato</span><span>▣ 100% online e no seu ritmo</span><span>♢ Pagamento pela Hotmart</span></div>
 </div>
 <img loading="lazy" decoding="async" alt="Apresentação do curso, com bolo no pote de chocolate e sem coco ralado." class="cb-hero-art" src="img/b001b1b19d.webp"/>
@@ -1420,7 +1425,7 @@ body:has(#pagina-combo:target) #pagina-combo{display:block}
 <div class="cb-offer-panel"><div class="cb-offer-main"><div class="cb-price"><span>CURSO ONLINE</span><h2>Bolo no Pote Lucrativo</h2><strong>R$ 297,00</strong></div>
 <p>Acesso ao curso online para aprender no seu ritmo.</p>
 <p class="cb-offer-note">Curso focado em técnicas e gestão do negócio. Para receitas prontas, conheça o <a href="#pagina-bolo-ebook">e-book</a>, o <a href="#pagina-kit">Kit Sabores Premium</a> ou o <a href="#pagina-combo">Combo</a>.</p></div>
-<a class="cb-btn cb-buy" href="https://pay.hotmart.com/T104394838M?checkoutMode=10" rel="noopener noreferrer" target="_blank">QUERO COMEÇAR AGORA ❯</a>
+<span class="cb-btn cb-buy btn-em-atualizacao" aria-disabled="true">CURSO TEMPORARIAMENTE EM ATUALIZAÇÃO</span>
 </div><p class="cb-checkout-note">Você será direcionado ao ambiente de pagamento da Hotmart. Confirme os detalhes da oferta antes da compra.</p>
 </div></section>
 <div aria-hidden="true" class="cb-choc"></div>
@@ -1480,8 +1485,8 @@ body:has(#pagina-combo:target) #pagina-combo{display:block}
 <div class="card-body">
 <h3>Bolo no Pote Lucrativo — Curso Online</h3>
 <p class="description">Aprenda produção, montagem, organização, precificação, divulgação e vendas de bolos no pote.</p>
-<p class="price">R$ 297,00</p>
-<a class="buy product-sales-link" href="#pagina-bolo-curso" style="display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;">Conhecer o curso</a>
+<p class="price">Temporariamente em atualização</p>
+<span class="buy btn-em-atualizacao" aria-disabled="true">Em atualização</span>
 </div>
 </article><article class="product-card" aria-label="Kit Sabores Premium + Guia Visual de Montagem Lucrativa">
  <div class="book-cover" style="aspect-ratio:auto;padding:0;overflow:hidden;border:none;background:#ffead6;">
@@ -1509,8 +1514,8 @@ body:has(#pagina-combo:target) #pagina-combo{display:block}
 </div><div class="card-body">
 <h3>Combo Bolo no Pote Lucrativo</h3>
 <p class="description">E-book de receitas + curso online de organização e vendas + Kit Sabores Premium e Guia Visual + Logística Inteligente.</p>
-<p class="price">R$ 347,00</p>
-<a class="buy product-sales-link" href="#pagina-combo" style="display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;">Conhecer o Combo</a>
+<p class="price">Temporariamente em atualização</p>
+<span class="buy btn-em-atualizacao" aria-disabled="true">Em atualização</span>
 </div></article><article aria-hidden="true" class="product-card shelf-empty">
 <div class="book-cover"></div>
 <div class="card-body"></div>
@@ -1960,8 +1965,8 @@ window.addEventListener('hashchange',topoLogistica);
 window.addEventListener('load',topoLogistica);
 document.addEventListener('click',function(e){if(e.target.closest('a[href="#pagina-logistica"]'))requestAnimationFrame(topoLogistica);});
 })();</script>
-<div id="pagina-combo"><nav class="combo-back-nav"><a aria-label="Voltar para os produtos" href="#vitrine">‹ Voltar à Editora Digital</a></nav><main class="page">
-<header class="hero hero-approved"><h1 class="sr-only">Combo Bolo no Pote Lucrativo</h1><img loading="lazy" decoding="async" class="approved-hero-image" alt="Combo Bolo no Pote Lucrativo — título rosa com brilho suave e cupcake, seguido da foto original da autora de uniforme amarelo e avental rosa, segurando bolo de chocolate com cerejas" src="img/9466ba47cf.webp"/><div class="claim">Uma ideia gostosa que pode se transformar em renda extra ou no seu próprio negócio!</div><p class="teaser">Para você aprender a produzir, organizar e vender bolos no pote com mais conhecimento, planejamento e confiança. O combo reúne um livro digital, um curso e dois materiais complementares.</p><a class="cta" href="https://pay.hotmart.com/M104436028C">Quero o Combo Agora →</a></header>
+<div id="pagina-combo"><nav class="combo-back-nav"><a aria-label="Voltar para os produtos" href="#vitrine">‹ Voltar à Editora Digital</a></nav><p class="em-atualizacao-aviso">🛠️ O Combo Bolo no Pote Lucrativo está temporariamente em atualização, porque o curso está sendo refeito. Em breve ele volta, novo e melhorado!</p><main class="page">
+<header class="hero hero-approved"><h1 class="sr-only">Combo Bolo no Pote Lucrativo</h1><img loading="lazy" decoding="async" class="approved-hero-image" alt="Combo Bolo no Pote Lucrativo — título rosa com brilho suave e cupcake, seguido da foto original da autora de uniforme amarelo e avental rosa, segurando bolo de chocolate com cerejas" src="img/9466ba47cf.webp"/><div class="claim">Uma ideia gostosa que pode se transformar em renda extra ou no seu próprio negócio!</div><p class="teaser">Para você aprender a produzir, organizar e vender bolos no pote com mais conhecimento, planejamento e confiança. O combo reúne um livro digital, um curso e dois materiais complementares.</p><span class="cta btn-em-atualizacao" aria-disabled="true">Combo temporariamente em atualização</span></header>
 <section class="section section-pink"><div class="num">1. E-book de receitas</div><h2>Bolo no Pote Lucrativo</h2><img loading="lazy" decoding="async" alt="Nova capa do e-book Bolo no Pote Lucrativo" class="cover wide" src="img/ebook-bolo-capa-2026.webp"/><div class="lead">Receitas para agradar e vender o ano todo!</div><p>Um livro digital completo com receitas, orientações de preparo e sugestões de combinações para você produzir bolos no pote com qualidade e conquistar seus clientes.</p><p>Encontre informações sobre massas e recheios variados, montagem em camadas, conservação e apresentação. Um material para consultar ao planejar seus produtos e desenvolver a produção com mais organização.</p><div class="panel"><h3>O que você vai encontrar</h3><ul class="checks"><li><b>✓</b><span>Massas e recheios variados</span></li><li><b>✓</b><span>Combinações de sabores</span></li><li><b>✓</b><span>Dicas de preparo e montagem</span></li><li><b>✓</b><span>Apresentação e conservação</span></li><li><b>✓</b><span>Orientações para precificar</span></li><li><b>✓</b><span>Gestão e crescimento</span></li></ul></div></section>
 <section class="section section-yellow"><div class="num">2. Curso online</div><h2>Bolo no Pote Lucrativo</h2><img loading="lazy" decoding="async" alt="Capa amarela do curso online Bolo no Pote Lucrativo" class="cover wide" src="img/f2d5fb9aaa.webp"/><div class="lead">Passo a passo para transformar suas receitas em um negócio real e sustentável!</div><p>Um treinamento prático para você aprender a produzir, precificar e vender seus bolos no pote, mesmo que esteja começando do zero. O foco está nas técnicas e na gestão do negócio.</p><p>Do planejamento à montagem, passando por massas, recheios e congelamento, até a precificação, a divulgação e as vendas.</p><div class="panel"><h3>O que você vai aprender</h3><ul class="checks"><li><b>✓</b><span>Introdução ao bolo no pote</span></li><li><b>✓</b><span>Planejamento e organização</span></li><li><b>✓</b><span>Massas, recheios e congelamento</span></li><li><b>✓</b><span>Montagem e apresentação</span></li><li><b>✓</b><span>Precificação e lucro</span></li><li><b>✓</b><span>Vendas e divulgação</span></li><li><b>✓</b><span>Organização e crescimento</span></li></ul></div></section>
 <section class="section section-rose"><div class="num">3. Kit Sabores Premium + Guia Visual</div><h2>Kit Sabores Premium<br>+ Guia Visual</br></h2><img loading="lazy" decoding="async" alt="Capa oficial bege e vermelha do Kit Sabores Premium com 14 receitas" class="cover" src="img/3da4d51f01.webp"/><div class="lead">Receitas especiais para ampliar o cardápio e oferecer opções diferenciadas.</div><p>Um material complementar com <strong>14 receitas especiais e premium</strong> para surpreender seus clientes. As combinações de sabores ajudam a criar bolos no pote com apresentação atraente e maior valor percebido.</p><p>O Guia Visual mostra cuidados na montagem e na disposição das camadas, além de dicas sobre textura, cremosidade e apresentação. É um apoio para quem deseja sair do básico e dar um acabamento mais profissional aos produtos.</p><div class="panel"><h3>O que você vai encontrar</h3><ul class="checks"><li><b>✓</b><span>14 receitas especiais e premium</span></li><li><b>✓</b><span>Sabores diferenciados e criativos</span></li><li><b>✓</b><span>Dicas de combinações</span></li><li><b>✓</b><span>Sugestões de apresentação</span></li><li><b>✓</b><span>Guia visual com fotos e ideias</span></li><li><b>✓</b><span>Inspiração para datas especiais</span></li></ul></div></section>
@@ -1969,7 +1974,7 @@ document.addEventListener('click',function(e){if(e.target.closest('a[href="#pagi
 <section class="section section-blue"><div class="num">4. Logística Inteligente</div><h2>Logística Inteligente<br/>para Pequenas Empresas</h2><img loading="lazy" decoding="async" alt="Capa azul do guia Logística Inteligente para Pequenas Empresas" class="cover" src="img/9219d708cc.webp"/><div class="lead">Organização e segurança para suas vendas crescerem sem complicação!</div><p>Um guia prático para organizar suas entregas, escolher parceiros e manter a qualidade, mesmo em uma operação pequena. Afinal, nem todo empreendedor tem veículo próprio ou consegue realizar pessoalmente todas as entregas.</p><p>Aprenda a planejar pedidos, combinar prazos e condições, avaliar custos e pensar em formas de envio e parceria. A proposta é ajudar você a vender com mais organização, sem deixar que a logística atrapalhe os resultados.</p><div class="panel"><h3>O que você vai encontrar</h3><ul class="checks"><li><b>✓</b><span>Formas de entrega e envio</span></li><li><b>✓</b><span>Parcerias e aplicativos</span></li><li><b>✓</b><span>Como reduzir custos</span></li><li><b>✓</b><span>Planejamento logístico</span></li><li><b>✓</b><span>Dicas para manter a qualidade</span></li><li><b>✓</b><span>Modelos e checklists práticos</span></li></ul></div></section>
 <section class="section section-audience"><div class="eyebrow">Feito para você</div><h2>Este combo é para quem...</h2><div class="panel audiences"><li><i>✦</i>Quer começar a produzir bolos no pote para vender.</li><li><i>✦</i>Já faz doces e busca novas receitas e ideias.</li><li><i>✦</i>Precisa organizar melhor a produção e suas vendas.</li><li><i>✦</i>Quer uma renda extra ou o próprio negócio.</li><li><i>✦</i>Ama confeitaria e quer se profissionalizar.</li></div></section>
 <section class="section section-author"><h2>Conheça a autora</h2><img loading="lazy" decoding="async" alt="Retrato da autora com touca amarela, sem bolo" class="portrait" src="img/449806e701.webp"/><p>Eu sou <strong>Fabiane Peixoto</strong>, apaixonada por confeitaria e por tudo o que envolve o universo dos doces. Criei este material para compartilhar com você conhecimentos reunidos com carinho e dedicação.</p><p>Meu objetivo é ajudar quem deseja aprender a produzir sobremesas, organizar suas atividades e transformar esse interesse em uma oportunidade de renda, com mais conhecimento e confiança.</p><div class="signature">Fabiane Peixoto ♡</div></section>
-<section class="section section-price" id="oferta"><div class="price-intro">Tudo em um só combo</div><h2>Comece com um combo completo</h2><p class="price-sub">E-book de receitas + curso online + Kit Sabores Premium + Logística Inteligente.</p><div class="line"></div><p class="price-sub">Tudo isso por apenas:</p><div class="amount">R$ 347,00</div><a class="cta" href="https://pay.hotmart.com/M104436028C">Quero o Combo Agora →</a><div class="security">Pagamento pela Hotmart · Conteúdo 100% digital<br/>Acesse pelo celular, tablet ou computador</div></section>
+<section class="section section-price" id="oferta"><div class="price-intro">Tudo em um só combo</div><h2>Comece com um combo completo</h2><p class="price-sub">E-book de receitas + curso online + Kit Sabores Premium + Logística Inteligente.</p><div class="line"></div><p class="price-sub">Tudo isso por apenas:</p><div class="amount">R$ 347,00</div><span class="cta btn-em-atualizacao" aria-disabled="true">Combo temporariamente em atualização</span><div class="security">Pagamento pela Hotmart · Conteúdo 100% digital<br/>Acesse pelo celular, tablet ou computador</div></section>
 </main></div>
 <script>(function(){function topoCombo(){if(location.hash==='#pagina-combo'){window.scrollTo(0,0);requestAnimationFrame(function(){window.scrollTo(0,0)});}}window.addEventListener('hashchange',topoCombo);window.addEventListener('load',topoCombo);document.addEventListener('click',function(e){if(e.target.closest('a[href="#pagina-combo"]'))requestAnimationFrame(topoCombo);});})();</script>
 
