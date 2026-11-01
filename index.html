@@ -1288,6 +1288,13 @@ body:has(#pagina-kit:target, #pagina-kit :target) #pagina-kit{display:block}
 @media (max-width:380px){#pagina-logistica .container{padding:0 20px}
 #pagina-logistica .hero-image{aspect-ratio:1}
 #pagina-logistica .tile{padding:20px}}
+#pagina-logistica .log-capa{aspect-ratio:auto;object-fit:contain;max-width:420px;justify-self:center;border-radius:14px}
+#pagina-logistica .log-cta-hero{margin:26px 0 10px;max-width:100%}
+#pagina-logistica .log-ilustra{box-shadow:none;border-radius:0;background:none}
+#pagina-logistica .log-duo{display:grid;grid-template-columns:320px 1fr;gap:40px;align-items:center;max-width:900px;margin:auto}
+#pagina-logistica .log-duo .log-ilustra{width:100%;height:auto}
+#pagina-logistica .log-capa-oferta{display:block;width:min(240px,60%);height:auto;margin:6px auto 26px;border-radius:10px;box-shadow:0 14px 30px #00000040}
+@media (max-width:720px){#pagina-logistica .log-duo{grid-template-columns:1fr;gap:22px}#pagina-logistica .log-duo .log-ilustra{max-width:300px;justify-self:center}#pagina-logistica .log-capa{aspect-ratio:auto;max-width:340px}}
 #pagina-logistica{display:none;min-height:100vh;overflow-x:clip}
 body:has(#pagina-logistica:target, #pagina-logistica :target) #vitrine{display:none}
 body:has(#pagina-logistica:target, #pagina-logistica :target) #pagina-logistica{display:block}
@@ -1497,13 +1504,13 @@ body:has(#pagina-combo:target) #pagina-combo{display:block}
  <p class="price">R$ 27,00</p>
  <a class="buy product-sales-link" href="#pagina-kit" style="display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;">Conhecer o Kit</a>
  </div>
-</article><article aria-label="Logística Inteligente para Pequenas Empresas" class="product-card">
-<div class="book-cover" style="aspect-ratio:auto;padding:0;overflow:hidden;border:none;background:#e8f4fc;">
-<img loading="lazy" decoding="async" alt="Capa do e-book Logística Inteligente para Pequenas Empresas, por Fabiane Peixoto" loading="lazy" style="display:block;width:100%;height:auto;object-fit:contain;" src="img/1a025b7176.webp"/>
+</article><article aria-label="Logística Inteligente para Pequenos Negócios" class="product-card">
+<div class="book-cover" style="aspect-ratio:auto;padding:0;overflow:hidden;border:none;background:#12233D;">
+<img loading="lazy" decoding="async" alt="Capa do e-book Logística Inteligente para Pequenos Negócios, por Fabiane Peixoto" style="display:block;width:100%;height:auto;object-fit:contain;" src="img/logistica-capa-2026.webp"/>
 </div>
 <div class="card-body">
-<h3>Logística Inteligente para Pequenas Empresas</h3>
-<p class="description">Aprenda a organizar pedidos, planejar entregas, trabalhar com parceiros e reduzir imprevistos em pequenos negócios de alimentação.</p>
+<h3>Logística Inteligente para Pequenos Negócios</h3>
+<p class="description">Como entregar seus produtos sem carro, sem moto e sem travar as vendas. Com tabela de frete, mensagens prontas, capítulo para perecíveis e checklist.</p>
 <p class="price">R$ 27,00</p>
 <a class="buy product-sales-link" href="#pagina-logistica" style="display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:700;">Conhecer o livro</a>
 <a class="lg-card-link" href="#leitura-logistica">📖 Ler a apresentação grátis</a>
@@ -1521,7 +1528,7 @@ body:has(#pagina-combo:target) #pagina-combo{display:block}
 <div class="card-body"></div>
 </article></div>
 </div></section>
-<section class="leia-gratis" id="leia-gratis" aria-label="Leia grátis"><div class="container"><span class="lg-kicker">📖 Leia grátis</span><h2>Comece a ler agora, sem pagar nada</h2><p class="lg-lead">Os primeiros capítulos dos nossos livros, para você ler aqui no app.</p><div class="lg-lista"><a class="lg-item" href="#leitura-torcedor"><img src="img/2bca424d1d.webp" alt="" loading="lazy" decoding="async"><div><strong>O Jogo Interior do Torcedor</strong><span>Ler o 1º capítulo ❯</span></div></a><a class="lg-item" href="#leitura-amor"><img src="img/4d292bc013.webp" alt="" loading="lazy" decoding="async"><div><strong>O Amor que Ninguém Posta</strong><span>Ler o 1º capítulo ❯</span></div></a><a class="lg-item" href="#leitura-zero"><img src="img/36fe050c84.webp" alt="" loading="lazy" decoding="async"><div><strong>Começar do Zero sem Drama</strong><span>Ler o 1º capítulo ❯</span></div></a><a class="lg-item" href="#leitura-brigas"><img src="img/0db2f73b79.webp" alt="" loading="lazy" decoding="async"><div><strong>Por que a gente briga sempre pela mesma coisa?</strong><span>Ler o 1º capítulo ❯</span></div></a><a class="lg-item" href="#leitura-logistica"><img src="img/1a025b7176.webp" alt="" loading="lazy" decoding="async"><div><strong>Logística Inteligente para Pequenas Empresas</strong><span>Ler a apresentação ❯</span></div></a><a class="lg-item" href="#leitura-bolo"><img src="img/6085ecn075.webp" alt="" loading="lazy" decoding="async"><div><strong>Bolo no Pote Lucrativo</strong><span>Ler a Parte 1 ❯</span></div></a></div></div></section>
+<section class="leia-gratis" id="leia-gratis" aria-label="Leia grátis"><div class="container"><span class="lg-kicker">📖 Leia grátis</span><h2>Comece a ler agora, sem pagar nada</h2><p class="lg-lead">Os primeiros capítulos dos nossos livros, para você ler aqui no app.</p><div class="lg-lista"><a class="lg-item" href="#leitura-torcedor"><img src="img/2bca424d1d.webp" alt="" loading="lazy" decoding="async"><div><strong>O Jogo Interior do Torcedor</strong><span>Ler o 1º capítulo ❯</span></div></a><a class="lg-item" href="#leitura-amor"><img src="img/4d292bc013.webp" alt="" loading="lazy" decoding="async"><div><strong>O Amor que Ninguém Posta</strong><span>Ler o 1º capítulo ❯</span></div></a><a class="lg-item" href="#leitura-zero"><img src="img/36fe050c84.webp" alt="" loading="lazy" decoding="async"><div><strong>Começar do Zero sem Drama</strong><span>Ler o 1º capítulo ❯</span></div></a><a class="lg-item" href="#leitura-brigas"><img src="img/0db2f73b79.webp" alt="" loading="lazy" decoding="async"><div><strong>Por que a gente briga sempre pela mesma coisa?</strong><span>Ler o 1º capítulo ❯</span></div></a><a class="lg-item" href="#leitura-logistica"><img src="img/logistica-capa-2026.webp" alt="" loading="lazy" decoding="async"><div><strong>Logística Inteligente para Pequenos Negócios</strong><span>Ler a apresentação ❯</span></div></a><a class="lg-item" href="#leitura-bolo"><img src="img/6085ecn075.webp" alt="" loading="lazy" decoding="async"><div><strong>Bolo no Pote Lucrativo</strong><span>Ler a Parte 1 ❯</span></div></a></div></div></section>
 <section class="calc-promo" aria-label="Calculadora grátis"><div class="container"><div class="calc-emoji" aria-hidden="true">🧮</div><div class="calc-text"><span class="calc-kicker">Ferramenta grátis</span><h2>Por quanto vender o seu bolo no pote?</h2><p>Coloque seus custos e descubra o preço certo para cada pote, com lucro.</p></div><a href="#pagina-calculadora">Usar a calculadora ❯</a></div></section>
 <section class="closing"><div class="container"><h2>Encontre o próximo conteúdo para a sua jornada</h2><a class="closing-cta" href="#produtos">Ver produtos</a></div></section>
 </main>
@@ -1908,54 +1915,70 @@ body:has(#pagina-combo:target) #pagina-combo{display:block}
 </div>
 <script>(function(){function topKit(){if(location.hash==='#pagina-kit'){window.scrollTo(0,0);requestAnimationFrame(()=>window.scrollTo(0,0));}}window.addEventListener('hashchange',topKit);window.addEventListener('load',topKit);document.addEventListener('click',function(e){if(e.target.closest('a[href="#pagina-kit"]'))requestAnimationFrame(topKit);});})();</script>
 <!-- Página de vendas da Logística Inteligente, integrada à Editora Digital -->
-<div id="pagina-logistica" aria-label="Página de vendas: Logística Inteligente para Pequenas Empresas">
+<div id="pagina-logistica" aria-label="Página de vendas: Logística Inteligente para Pequenos Negócios">
 <a class="log-voltar" href="#vitrine">← Voltar à vitrine da Editora Digital</a>
 <header>EDITORA DIGITAL <div class="subhead">CONHECIMENTO PARA EMPREENDER</div></header><main>
 <section class="hero"><div class="container hero-grid">
-<div><div class="eyebrow">E-book digital • Organização e entregas</div><h1>Logística Inteligente para Pequenas Empresas</h1>
-<p class="intro">Você prepara seus produtos, organiza os pedidos e conquista clientes. Mas como fazer as entregas funcionarem sem comprometer seu tempo e seu lucro?</p>
-<p class="intro"><strong>Aprenda a planejar pedidos, prazos, custos e alternativas de entrega</strong> para manter seu negócio de alimentos mais organizado, mesmo sem veículo próprio.</p>
-<div class="tiny-strip">Uma orientação prática para quem vende alimentos, trabalha em casa ou administra uma pequena produção.</div><p class="intro" style="margin-top:14px"><a href="#leitura-logistica" style="color:inherit;font-weight:700">📖 Ler a apresentação grátis</a></p></div>
-<img loading="lazy" decoding="async" alt="Autora em cozinha organizada, com caderno e computador, sem alimentos sobre a mesa" class="hero-image" src="img/24b7824092.webp"/>
+<div><div class="eyebrow">E-book digital • Guia prático de entregas</div><h1>Logística Inteligente para Pequenos Negócios</h1>
+<p class="intro">Você produz, divulga e conquista clientes. Mas, quando o pedido chega, vêm as dúvidas: <strong>“Como vou entregar? Não tenho carro nem moto. Quanto cobro de frete? E se chegar estragado?”</strong></p>
+<p class="intro">Este guia mostra, passo a passo, como entregar seus produtos <strong>sem veículo próprio, sem perder lucro e sem travar as vendas</strong>.</p>
+<div class="tiny-strip">Para quem vende comida, doces, roupas, artesanato, cosméticos, presentes e outros produtos.</div>
+<a class="cta log-cta-hero" href="https://pay.hotmart.com/O104965019O">Quero o livro agora →</a>
+<p class="intro" style="margin-top:6px;text-align:center"><a href="#leitura-logistica" style="color:inherit;font-weight:700">📖 Ler a apresentação grátis</a></p></div>
+<img decoding="async" alt="Capa do e-book Logística Inteligente para Pequenos Negócios, de Fabiane Peixoto" class="hero-image log-capa" src="img/logistica-capa-2026.webp"/>
 </div></section>
 <section class="book-section"><div class="container">
-<div class="eyebrow center">Conheça o livro</div><h2>Venda com mais organização, mesmo sem fazer pessoalmente todas as entregas.</h2><div class="decor"></div>
-<div class="book-grid"><img loading="lazy" decoding="async" alt="Capa original do e-book Logística Inteligente para Pequenas Empresas" class="book-photo" src="img/1a025b7176.webp"/>
-<div class="text-block"><p>O <strong>Logística Inteligente para Pequenas Empresas</strong> mostra como pensar a entrega desde o momento em que você aceita um pedido, e não apenas quando o alimento já está pronto.</p>
-<p>O conteúdo apresenta cuidados e decisões que ajudam quem empreende a definir regras claras, comunicar prazos, considerar parceiros e evitar que fretes ou imprevistos consumam o resultado das vendas.</p>
-<p>É um material para quem precisa de <strong>alternativas realistas</strong> e quer organizar a rotina sem depender de uma grande estrutura.</p>
-<div class="highlight">Você não precisa realizar tudo sozinho para conduzir um negócio bem organizado.</div></div></div></div></section>
-<section class="section-soft"><div class="container"><div class="eyebrow center">Para quem foi pensado</div><h2>Este livro é para quem vende comida e precisa organizar as entregas.</h2><div class="decor"></div>
-<p class="lead">Não importa se você prepara doces, salgados, marmitas, lanches, congelados ou outros produtos alimentícios: quando o negócio recebe pedidos, a entrega precisa fazer parte do planejamento.</p>
+<div class="eyebrow center">Conheça o livro</div><h2>Entregar bem não depende de ter carro, moto ou equipe.</h2><div class="decor"></div>
+<div class="book-grid"><img loading="lazy" decoding="async" alt="Ilustração de entregador em uma scooter saindo da tela de um celular" class="book-photo log-ilustra" src="img/log-motoboy-celular.webp"/>
+<div class="text-block"><p>A maioria dos problemas de entrega não é falta de veículo. <strong>É falta de regra.</strong> Quando você decide antes como vai entregar, quanto vai cobrar e quem responde por cada etapa, a entrega deixa de ser um susto a cada pedido.</p>
+<p>O <strong>Logística Inteligente para Pequenos Negócios</strong> traz 13 capítulos curtos, com linguagem simples, exemplos e textos prontos para copiar. Ao final, você terá sua própria política de entrega e um checklist para colocar tudo em prática em uma semana.</p>
+<div class="highlight">Negócios lucrativos não nascem grandes. Eles nascem organizados.</div></div></div></div></section>
+<section class="section-soft"><div class="container"><div class="eyebrow center">Para quem foi pensado</div><h2>Para quem vende e precisa entregar, mesmo começando pequeno.</h2><div class="decor"></div>
 <div class="grid">
-<div class="tile"><h3>Quem trabalha em casa</h3><p>Produz por encomenda e precisa combinar retirada, envio ou entrega com seus clientes.</p></div>
-<div class="tile"><h3>Quem não tem veículo próprio</h3><p>Busca formas de vender sem precisar transportar pessoalmente todos os pedidos.</p></div>
-<div class="tile"><h3>Quem já vende alimentos</h3><p>Quer organizar melhor os horários, os pedidos, os custos e a comunicação das entregas.</p></div>
-<div class="tile"><h3>Quem está começando</h3><p>Deseja planejar a logística antes de crescer e reduzir problemas evitáveis desde o início.</p></div>
+<div class="tile"><h3>Quem trabalha em casa</h3><p>Produz por encomenda e precisa combinar retirada, envio ou entrega sem receber clientes em casa.</p></div>
+<div class="tile"><h3>Quem não tem veículo próprio</h3><p>Quer vender sem precisar levar cada pedido pessoalmente até o cliente.</p></div>
+<div class="tile"><h3>Quem vende comida e perecíveis</h3><p>Precisa que o produto chegue na temperatura certa, no tempo certo e bem embalado.</p></div>
+<div class="tile"><h3>Quem vende online</h3><p>Roupas, artesanato, cosméticos ou presentes enviados pela cidade, pelos Correios ou por marketplaces.</p></div>
 </div></div></section>
-<section class="section-white"><div class="container"><div class="eyebrow center">O que você recebe</div><h2>Orientações práticas para planejar sua rotina de vendas e entregas</h2><div class="decor"></div>
+<section class="section-white"><div class="container"><div class="eyebrow center">O que você vai aprender</div><h2>Tudo o que você precisa decidir antes do próximo pedido</h2><div class="decor"></div>
 <div class="list">
-<div class="list-row"><span>✓</span><div><strong>Planejamento antes da venda:</strong> pense nas condições da entrega antes de confirmar cada pedido.</div></div>
-<div class="list-row"><span>✓</span><div><strong>Regras claras para pedidos:</strong> aprenda a definir prazos, formas de entrega e informações importantes para o cliente.</div></div>
-<div class="list-row"><span>✓</span><div><strong>Alternativas e parcerias:</strong> conheça formas de organizar envios sem precisar fazer pessoalmente todas as entregas.</div></div>
-<div class="list-row"><span>✓</span><div><strong>Cuidados com os custos:</strong> considere despesas de transporte e reduza o risco de prejuízos inesperados.</div></div>
-<div class="list-row"><span>✓</span><div><strong>Comunicação com os clientes:</strong> entenda a importância de explicar prazos, condições e possibilidades de entrega.</div></div>
-<div class="list-row"><span>✓</span><div><strong>Rotina mais organizada:</strong> aprenda a pensar a logística do negócio mesmo com uma estrutura pequena.</div></div>
+<div class="list-row"><span>✓</span><div><strong>Os 3 modelos de venda:</strong> só retirada, retirada com entrega opcional ou entrega terceirizada, e qual combina com a sua rotina.</div></div>
+<div class="list-row"><span>✓</span><div><strong>Como entregar sem carro ou moto:</strong> aplicativos de entrega, motoboy parceiro, Correios, transportadoras e envio pelos marketplaces.</div></div>
+<div class="list-row"><span>✓</span><div><strong>O modelo mais simples para quem começa sozinho:</strong> o cliente chama o motorista e você não paga corrida.</div></div>
+<div class="list-row"><span>✓</span><div><strong>Quanto cobrar pela entrega:</strong> valor fixo, por distância ou pelo aplicativo, com tabela de exemplo e quando vale oferecer frete grátis.</div></div>
+<div class="list-row"><span>✓</span><div><strong>Área, prazos e horários:</strong> limites claros que protegem seu tempo e evitam promessas que você não consegue cumprir.</div></div>
+<div class="list-row"><span>✓</span><div><strong>Embalagem certa para cada produto:</strong> comida, roupas, artesanato, cosméticos e o teste do chacoalhar.</div></div>
+<div class="list-row"><span>✓</span><div><strong>Responsabilidades, atrasos e danos:</strong> quem responde por quê, explicado de forma simples.</div></div>
 </div></div></section>
-<section class="section-warm"><div class="container"><div class="eyebrow center">Muito além de transportar pedidos</div><h2>Uma boa venda também precisa de uma entrega bem planejada.</h2><div class="decor"></div>
-<p class="lead">Vender alimentos envolve organizar a produção, combinar horários e cumprir o que foi acertado. Quando essas decisões são tomadas com antecedência, fica mais fácil administrar o dia a dia e evitar surpresas.</p>
-<p class="lead">O livro ajuda você a analisar opções adequadas à sua realidade, desde retiradas combinadas até possibilidades de parceria para levar os pedidos ao cliente.</p>
-<div class="practical"><p><strong>Importante:</strong> este e-book é um guia de planejamento e organização. Ele não realiza entregas nem fornece uma transportadora ou aplicativo de entregadores.</p></div>
+<section class="section-warm"><div class="container"><div class="eyebrow center">Capítulo especial</div><h2>Vende comida, doces ou outros perecíveis?</h2><div class="decor"></div>
+<div class="log-duo"><img loading="lazy" decoding="async" alt="Bolsa térmica com marmitas e doces, relógio e cesta de presentes" class="log-ilustra" src="img/log-pereciveis.webp"/>
+<div><p class="lead" style="margin:0 0 16px">O livro tem um capítulo só para quem vende produtos que estragam com o tempo e o calor:</p>
+<div class="list" style="margin:0">
+<div class="list-row"><span>✓</span><div>Temperatura certa para refrigerados, congelados, quentes e produtos em temperatura ambiente</div></div>
+<div class="list-row"><span>✓</span><div>Como reduzir o tempo no caminho</div></div>
+<div class="list-row"><span>✓</span><div>Embalagem lacrada e etiqueta com validade e alergênicos</div></div>
+<div class="list-row"><span>✓</span><div>Como orientar o cliente a conservar o produto</div></div>
+</div></div></div></div></section>
+<section class="section-soft"><div class="container"><div class="eyebrow center">Material pronto para usar</div><h2>Copie, adapte e use no mesmo dia</h2><div class="decor"></div>
+<div class="grid">
+<div class="tile"><h3>💬 Mensagens de WhatsApp</h3><p>Textos prontos para confirmar pedidos, avisar saída e atrasos e pedir a opinião do cliente.</p></div>
+<div class="tile"><h3>📋 Política de entrega</h3><p>Um modelo para fixar no Instagram, no catálogo e na loja, respondendo às dúvidas antes que o cliente pergunte.</p></div>
+<div class="tile"><h3>🤝 Acordo com entregador</h3><p>Modelo simples para combinar valores, prazos e responsabilidades com seu motoboy parceiro.</p></div>
+<div class="tile"><h3>✅ Checklist de 1 semana</h3><p>Todos os passos para deixar sua entrega organizada, capítulo por capítulo.</p></div>
+</div>
+<div class="practical"><p><strong>Importante:</strong> este e-book é um guia de planejamento e organização. Ele não realiza entregas nem oferece transportadora ou aplicativo de entregadores. As orientações sobre direitos do consumidor são gerais e não substituem um advogado ou contador.</p></div>
 </div></section>
 <section class="author"><div class="container"><div class="eyebrow center">Por trás do conteúdo</div><h2>Conheça a autora</h2><div class="decor"></div>
 <div class="author-wrap"><img loading="lazy" decoding="async" alt="Retrato da autora Fabiane Peixoto, com cabelo solto" class="headshot" src="img/6cb8f0e55c.webp"/>
-<div><p><strong>Fabiane Peixoto</strong> é escritora e autora de materiais digitais que ajudam pequenos empreendedores a compreender e organizar diferentes etapas de seus negócios.</p>
-<p>Em <em>Logística Inteligente para Pequenas Empresas</em>, apresenta orientações em linguagem acessível para quem vende alimentos e precisa planejar pedidos e entregas com mais clareza, organização e confiança.</p>
+<div><p><strong>Fabiane Peixoto</strong> é empreendedora e fundadora da Editora Digital, onde publica livros e guias práticos para quem está começando um pequeno negócio.</p>
+<p>Em seus livros, transforma temas que parecem complicados em passos simples, com exemplos e modelos prontos para usar no dia a dia. Seu objetivo é ajudar empreendedores a organizar o negócio para vender mais com menos dor de cabeça.</p>
 <div class="signature">Fabiane Peixoto</div></div></div></div></section>
-<section class="offer" id="oferta"><div class="container"><div class="eyebrow" style="color:#e8d294">E-book digital</div><h2>Organize suas entregas. Cuide do seu negócio.</h2>
-<p class="small">Logística Inteligente para Pequenas Empresas — conteúdo digital para consultar e aplicar à rotina do seu negócio.</p>
+<section class="offer" id="oferta"><div class="container"><div class="eyebrow" style="color:#e8d294">E-book digital • Acesso imediato</div><h2>Organize suas entregas. Cuide do seu lucro.</h2>
+<img loading="lazy" decoding="async" alt="Capa do e-book Logística Inteligente para Pequenos Negócios" class="log-capa-oferta" src="img/logistica-capa-2026.webp"/>
+<p class="small">Logística Inteligente para Pequenos Negócios — 13 capítulos, capítulo especial para perecíveis, mensagens prontas, política de entrega, modelo de acordo e checklist.</p>
 <div style="color:#d1e8f5;font-weight:500;margin-bottom:6px">Por apenas</div><div class="price">R$ 27,00</div>
-<a class="cta" href="https://pay.hotmart.com/O104965019O" id="comprar">Quero o Livro Agora  →</a>
+<a class="cta" href="https://pay.hotmart.com/O104965019O" id="comprar">Quero o Livro Agora  →</a>
+<p class="offer-note">Pagamento seguro pela Hotmart. Você recebe o e-book em PDF logo após a compra.</p>
 </div></section>
 </main><footer class="footer">EDITORA DIGITAL · por Fabiane Peixoto</footer>
 </div>
@@ -1971,7 +1994,7 @@ document.addEventListener('click',function(e){if(e.target.closest('a[href="#pagi
 <section class="section section-yellow"><div class="num">2. Curso online</div><h2>Bolo no Pote Lucrativo</h2><img loading="lazy" decoding="async" alt="Capa amarela do curso online Bolo no Pote Lucrativo" class="cover wide" src="img/f2d5fb9aaa.webp"/><div class="lead">Passo a passo para transformar suas receitas em um negócio real e sustentável!</div><p>Um treinamento prático para você aprender a produzir, precificar e vender seus bolos no pote, mesmo que esteja começando do zero. O foco está nas técnicas e na gestão do negócio.</p><p>Do planejamento à montagem, passando por massas, recheios e congelamento, até a precificação, a divulgação e as vendas.</p><div class="panel"><h3>O que você vai aprender</h3><ul class="checks"><li><b>✓</b><span>Introdução ao bolo no pote</span></li><li><b>✓</b><span>Planejamento e organização</span></li><li><b>✓</b><span>Massas, recheios e congelamento</span></li><li><b>✓</b><span>Montagem e apresentação</span></li><li><b>✓</b><span>Precificação e lucro</span></li><li><b>✓</b><span>Vendas e divulgação</span></li><li><b>✓</b><span>Organização e crescimento</span></li></ul></div></section>
 <section class="section section-rose"><div class="num">3. Kit Sabores Premium + Guia Visual</div><h2>Kit Sabores Premium<br>+ Guia Visual</br></h2><img loading="lazy" decoding="async" alt="Capa oficial bege e vermelha do Kit Sabores Premium com 14 receitas" class="cover" src="img/3da4d51f01.webp"/><div class="lead">Receitas especiais para ampliar o cardápio e oferecer opções diferenciadas.</div><p>Um material complementar com <strong>14 receitas especiais e premium</strong> para surpreender seus clientes. As combinações de sabores ajudam a criar bolos no pote com apresentação atraente e maior valor percebido.</p><p>O Guia Visual mostra cuidados na montagem e na disposição das camadas, além de dicas sobre textura, cremosidade e apresentação. É um apoio para quem deseja sair do básico e dar um acabamento mais profissional aos produtos.</p><div class="panel"><h3>O que você vai encontrar</h3><ul class="checks"><li><b>✓</b><span>14 receitas especiais e premium</span></li><li><b>✓</b><span>Sabores diferenciados e criativos</span></li><li><b>✓</b><span>Dicas de combinações</span></li><li><b>✓</b><span>Sugestões de apresentação</span></li><li><b>✓</b><span>Guia visual com fotos e ideias</span></li><li><b>✓</b><span>Inspiração para datas especiais</span></li></ul></div></section>
 <section class="cake-strip"><div class="eyebrow">Inspiração para seu cardápio</div><h2>Bolos no pote que encantam</h2><img loading="lazy" decoding="async" alt="Dois bolos em potes plásticos: chocolate com pudim de ovos e Ninho com Nutella" src="img/73ba9cacb3.webp"/><div class="flavor-labels"><span>Bolo de chocolate<br/>com pudim de ovos</span><span>Ninho<br/>com Nutella</span></div></section>
-<section class="section section-blue"><div class="num">4. Logística Inteligente</div><h2>Logística Inteligente<br/>para Pequenas Empresas</h2><img loading="lazy" decoding="async" alt="Capa azul do guia Logística Inteligente para Pequenas Empresas" class="cover" src="img/9219d708cc.webp"/><div class="lead">Organização e segurança para suas vendas crescerem sem complicação!</div><p>Um guia prático para organizar suas entregas, escolher parceiros e manter a qualidade, mesmo em uma operação pequena. Afinal, nem todo empreendedor tem veículo próprio ou consegue realizar pessoalmente todas as entregas.</p><p>Aprenda a planejar pedidos, combinar prazos e condições, avaliar custos e pensar em formas de envio e parceria. A proposta é ajudar você a vender com mais organização, sem deixar que a logística atrapalhe os resultados.</p><div class="panel"><h3>O que você vai encontrar</h3><ul class="checks"><li><b>✓</b><span>Formas de entrega e envio</span></li><li><b>✓</b><span>Parcerias e aplicativos</span></li><li><b>✓</b><span>Como reduzir custos</span></li><li><b>✓</b><span>Planejamento logístico</span></li><li><b>✓</b><span>Dicas para manter a qualidade</span></li><li><b>✓</b><span>Modelos e checklists práticos</span></li></ul></div></section>
+<section class="section section-blue"><div class="num">4. Logística Inteligente</div><h2>Logística Inteligente<br/>para Pequenos Negócios</h2><img loading="lazy" decoding="async" alt="Capa do e-book Logística Inteligente para Pequenos Negócios" class="cover" src="img/logistica-capa-2026.webp"/><div class="lead">Organização e segurança para suas vendas crescerem sem complicação!</div><p>Um guia prático para organizar suas entregas, escolher parceiros e manter a qualidade, mesmo em uma operação pequena. Afinal, nem todo empreendedor tem veículo próprio ou consegue realizar pessoalmente todas as entregas.</p><p>Aprenda a planejar pedidos, combinar prazos e condições, avaliar custos e pensar em formas de envio e parceria. A proposta é ajudar você a vender com mais organização, sem deixar que a logística atrapalhe os resultados.</p><div class="panel"><h3>O que você vai encontrar</h3><ul class="checks"><li><b>✓</b><span>Formas de entrega e envio</span></li><li><b>✓</b><span>Parcerias e aplicativos</span></li><li><b>✓</b><span>Como reduzir custos</span></li><li><b>✓</b><span>Planejamento logístico</span></li><li><b>✓</b><span>Dicas para manter a qualidade</span></li><li><b>✓</b><span>Modelos e checklists práticos</span></li></ul></div></section>
 <section class="section section-audience"><div class="eyebrow">Feito para você</div><h2>Este combo é para quem...</h2><div class="panel audiences"><li><i>✦</i>Quer começar a produzir bolos no pote para vender.</li><li><i>✦</i>Já faz doces e busca novas receitas e ideias.</li><li><i>✦</i>Precisa organizar melhor a produção e suas vendas.</li><li><i>✦</i>Quer uma renda extra ou o próprio negócio.</li><li><i>✦</i>Ama confeitaria e quer se profissionalizar.</li></div></section>
 <section class="section section-author"><h2>Conheça a autora</h2><img loading="lazy" decoding="async" alt="Retrato da autora com touca amarela, sem bolo" class="portrait" src="img/449806e701.webp"/><p>Eu sou <strong>Fabiane Peixoto</strong>, apaixonada por confeitaria e por tudo o que envolve o universo dos doces. Criei este material para compartilhar com você conhecimentos reunidos com carinho e dedicação.</p><p>Meu objetivo é ajudar quem deseja aprender a produzir sobremesas, organizar suas atividades e transformar esse interesse em uma oportunidade de renda, com mais conhecimento e confiança.</p><div class="signature">Fabiane Peixoto ♡</div></section>
 <section class="section section-price" id="oferta"><div class="price-intro">Tudo em um só combo</div><h2>Comece com um combo completo</h2><p class="price-sub">E-book de receitas + curso online + Kit Sabores Premium + Logística Inteligente.</p><div class="line"></div><p class="price-sub">Tudo isso por apenas:</p><div class="amount">R$ 347,00</div><span class="cta btn-em-atualizacao" aria-disabled="true">Combo temporariamente em atualização</span><div class="security">Pagamento pela Hotmart · Conteúdo 100% digital<br/>Acesse pelo celular, tablet ou computador</div></section>
@@ -2308,22 +2331,21 @@ body:has(#leitura-torcedor:target, #leitura-torcedor :target) #leitura-torcedor{
 <div class="lt-bar"><a href="#vitrine" onclick="setTimeout(function(){window.scrollTo(0,0)},40)">‹ Voltar</a><div class="lt-fonte" aria-label="Tamanho da letra"><button type="button" data-lt="-1" aria-label="Diminuir letra">A−</button><button type="button" data-lt="1" aria-label="Aumentar letra">A+</button></div><div class="lt-progresso" aria-hidden="true"></div></div>
 <main class="lt-wrap">
 <span class="lt-selo">🛵 Leitura grátis · Apresentação</span>
-<img class="lt-capa" src="img/1a025b7176.webp" alt="Capa de Logística Inteligente para Pequenas Empresas, de Fabiane Peixoto" loading="lazy" decoding="async">
+<img class="lt-capa" src="img/logistica-capa-2026.webp" alt="Capa de Logística Inteligente para Pequenos Negócios, de Fabiane Peixoto" loading="lazy" decoding="async">
 <section class="lt-pg lt-intro lt-log"><h2>Apresentação</h2><div class="lt-orn">🛵</div>
-<p>Abrir um negócio de bolo no pote parece simples.<br>Mas existe um detalhe que trava muita gente:</p>
-<ul class="lt-falas"><li>👉 “Como vou fazer as entregas?”</li><li>👉 “Não tenho carro.”</li><li>👉 “Não tenho moto.”</li><li>👉 “Não tenho quem me ajude.”</li></ul>
-<p>A verdade é:</p>
-<p>Você não precisa depender de ninguém para começar.<br>Você precisa de modelo, estratégia e regras claras.</p>
-<p>Este guia vai te mostrar como estruturar seu negócio de forma profissional, mesmo trabalhando sozinho.</p>
-<img class="lt-ilustra" src="img/log-moto.webp" alt="Entregador sorridente em uma scooter amarela com caixa de entregas" width="480" height="454" loading="lazy" decoding="async">
+<p>Você pode vender e entregar bem mesmo sem carro, sem moto e sem ninguém para ajudar. O que faz a diferença é ter um modelo de entrega definido antes de o pedido chegar.</p>
+<p>Quem vende bolo, roupa, crochê, cosméticos, marmita ou presentes costuma travar nas mesmas perguntas:</p>
+<ul class="lt-falas"><li>👉 “Como vou fazer as entregas?”</li><li>👉 “Não tenho carro nem moto.”</li><li>👉 “Quanto cobro de frete?”</li><li>👉 “E se o produto chegar estragado ou atrasado?”</li></ul>
+<p>Este guia responde cada uma delas com passos simples, exemplos e textos prontos para copiar. Ao final, você terá sua própria política de entrega e um checklist para começar ainda esta semana.</p>
+<img class="lt-ilustra" src="img/log-motoboy-celular.webp" alt="Entregador em uma scooter saindo da tela de um celular" width="490" height="560" loading="lazy" decoding="async">
 </section>
 <section class="lt-fim" aria-label="Continue lendo">
 <small>Fim da amostra grátis</small>
 <h2>Gostou? Continue lendo.</h2>
-<p>No guia completo você vê os modelos de venda e entrega, como definir taxa e horários, de quem é a responsabilidade pela entrega e frases prontas para falar com os clientes.</p>
+<p>No livro completo você vê os modelos de venda, como entregar sem carro ou moto, quanto cobrar de frete, embalagem, o capítulo especial para perecíveis, mensagens prontas para o WhatsApp, política de entrega, modelo de acordo com entregador e checklist.</p>
 <div class="lt-preco">R$ 27,00</div>
-<a class="lt-btn" href="https://pay.hotmart.com/O104965019O" rel="noopener noreferrer" target="_blank">Quero o guia completo →</a>
-<a class="lt-mais" href="#pagina-logistica" onclick="setTimeout(function(){window.scrollTo(0,0)},40)">Conhecer mais sobre o guia</a>
+<a class="lt-btn" href="https://pay.hotmart.com/O104965019O" rel="noopener noreferrer" target="_blank">Quero o livro completo →</a>
+<a class="lt-mais" href="#pagina-logistica" onclick="setTimeout(function(){window.scrollTo(0,0)},40)">Conhecer mais sobre o livro</a>
 </section>
 <p class="lt-nota">© 2026 Fabiane Peixoto. Amostra gratuita. Todos os direitos reservados.</p>
 </main>

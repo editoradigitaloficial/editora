@@ -1,6 +1,6 @@
 // Guarda o site no aparelho para abrir rápido e funcionar sem internet.
 // Ao atualizar o site, aumente o número da versão abaixo.
-const VERSAO = 'editora-v29';
+const VERSAO = 'editora-v30';
 const ARQUIVOS = [
   "./",
   "index.html",
@@ -11,6 +11,9 @@ const ARQUIVOS = [
   "icons/apple-touch-icon.png",
   "img/0b0955f448.webp",
   "img/ebook-bolo-capa-2026.webp",
+  "img/logistica-capa-2026.webp",
+  "img/log-motoboy-celular.webp",
+  "img/log-pereciveis.webp",
   "img/bolos-pote-2026.webp",
   "img/combo-bolo-capa-2026.webp",
   "img/0db2f73b79.webp",
