@@ -1,6 +1,6 @@
 // Guarda o site no aparelho para abrir rápido e funcionar sem internet.
 // Ao atualizar o site, aumente o número da versão abaixo.
-const VERSAO = 'editora-v36';
+const VERSAO = 'editora-v37';
 const ARQUIVOS = [
   "./",
   "index.html",
@@ -26,7 +26,7 @@ const ARQUIVOS = [
   "img/36fe050c84.webp",
   "img/3da4d51f01.webp",
   "img/449806e701.webp",
-  "img/kit-capa-2026b.webp",
+  "img/kit-capa-2026c.webp",
   "img/4d292bc013.webp",
   "img/4fb6f3dfa7.webp",
   "img/5109e3ece0.webp",
