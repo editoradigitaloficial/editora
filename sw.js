@@ -1,6 +1,6 @@
 // Guarda o site no aparelho para abrir rápido e funcionar sem internet.
 // Ao atualizar o site, aumente o número da versão abaixo.
-const VERSAO = 'editora-v33';
+const VERSAO = 'editora-v34';
 const ARQUIVOS = [
   "./",
   "index.html",
@@ -43,14 +43,14 @@ const ARQUIVOS = [
   "img/9219d708cc.webp",
   "img/9466ba47cf.webp",
   "img/9735de8e62.webp",
-  "img/9848c6c70d.webp",
+  "img/kit-fabi-bolo-2026.webp",
   "img/a169e3f7e0.webp",
   "img/aa496d9e95.webp",
   "img/b001b1b19d.webp",
   "img/b65b6d6039.webp",
   "img/ba911b6554.webp",
   "img/badea9f1bc.webp",
-  "img/bf94ef5b8f.webp",
+  "img/kit-dois-sabores-2026.webp",
   "img/d8f30dn016.webp",
   "img/f2d5fb9aaa.webp",
   "img/f47c576bbd.webp",
