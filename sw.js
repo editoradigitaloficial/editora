@@ -1,6 +1,6 @@
 // Guarda o site no aparelho para abrir rápido e funcionar sem internet.
 // Ao atualizar o site, aumente o número da versão abaixo.
-const VERSAO = 'editora-v32';
+const VERSAO = 'editora-v33';
 const ARQUIVOS = [
   "./",
   "index.html",
@@ -14,7 +14,7 @@ const ARQUIVOS = [
   "img/logistica-capa-2026.webp",
   "img/log-motoboy-celular.webp",
   "img/log-pereciveis.webp",
-  "img/bolos-pote-2026.webp",
+  "img/bolos-pote-2026-rosa.webp",
   "img/combo-bolo-capa-2026.webp",
   "img/0db2f73b79.webp",
   "img/1a025b7176.webp",
